@@ -32,6 +32,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -101,6 +102,15 @@ public class StoreUIController implements Initializable {
             "HOTLINE 1900.2091",
             "MIỄN PHÍ VẬN CHUYỂN TOÀN QUỐC"
     };
+
+    // Add this field to hold banner image URLs
+    private final String[] bannerImageUrls = {
+        "/images/f.jpg",
+        "/images/banner2.jpg",
+        "/images/banner3.jpg"
+    };
+    private int currentBannerImageIndex = 0;
+
 
 
     @FXML
@@ -294,6 +304,8 @@ public class StoreUIController implements Initializable {
         bannerTimeline.setCycleCount(Animation.INDEFINITE);
         bannerTimeline.play();
     }
+
+
 
 
 
